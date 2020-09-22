@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/padrao.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/estilo.css'>
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../js/subir&RecolherCartas.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/checagemJogos.js"></script>
+
+
+</head>
+
+<body>
+    <main id="main">
+        <article id="botaoRecomecar" onclick="recomecarCartas()">
+
+        </article>
+        <article id="letraRecomecar">
+            RECOMEÇAR
+        </article>
+        <article id="botaoRecolher" onclick="recolherCartas()">
+            <img src="../img/voltar.png" id="setaBaixo">
+
+        </article>
+        <article id='mesaPoker'>
+            <section id="cartaMesa1" onclick="subirCartasMesa('mesa1')">
+
+            </section>
+            <section id="cartaMesa2" onclick="subirCartasMesa('mesa2')">
+
+            </section>
+            <section id="cartaMesa3" onclick="subirCartasMesa('mesa3')">
+
+            </section>
+            <section id="cartaMesa4" onclick="subirCartasMesa('mesa4')">
+
+            </section>
+            <section id="cartaMesa5" onclick="subirCartasMesa('mesa5')">
+
+            </section>
+        </article>
+        <article id="cartaMao">
+            <section id="cartaMao1" onclick="subirCartasMao('mao1')">
+
+            </section>
+            <section id="cartaMao2" onclick="subirCartasMao('mao2')">
+
+            </section>
+            <section id="chanceVitoria">
+
+            </section>
+        </article>
+        <article id="todasCartas">
+            <section class="boxCartasClass" id="copas">
+                <section class="cartasClass" id='naipeCopas'></section>
+                <section class="cartasClass" onclick="posicionarCarta('doisCopas', 'url(../img/2H.png)','doisCopas')" id="doisCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('tresCopas', 'url(../img/3H.png)','tresCopas')" id="tresCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('quatroCopas', 'url(../img/4H.png)','quatroCopas')" id="quatroCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('cincoCopas', 'url(../img/5H.png)','cincoCopas')" id="cincoCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seisCopas', 'url(../img/6H.png)','seisCopas')" id="seisCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seteCopas', 'url(../img/7H.png)','seteCopas')" id="seteCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('oitoCopas', 'url(../img/8H.png)','oitoCopas')" id="oitoCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('noveCopas', 'url(../img/9H.png)','noveCopas')" id="noveCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('dezCopas', 'url(../img/10H.png)','dezCopas')" id="dezCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('valetesCopas', 'url(../img/JH.png)','valetesCopas')" id="valetesCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('damaCopas', 'url(../img/QH.png)','damaCopas')" id="damaCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('reiCopas', 'url(../img/KH.png)','reiCopas')" id="reiCopas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('asCopas', 'url(../img/AH.png)','asCopas')" id="asCopas"></section>
+            </section>
+            <section class="boxCartasClass" id="espadas">
+                <section class="cartasClass" id='naipeEspadas'></section>
+                <section class="cartasClass" onclick="posicionarCarta('doisEspadas', 'url(../img/2S.png)','doisEspadas')" id="doisEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('tresEspadas', 'url(../img/3S.png)','tresEspadas')" id="tresEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('quatroEspadas', 'url(../img/4S.png)','quatroEspadas')" id="quatroEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('cincoEspadas', 'url(../img/5S.png)','cincoEspadas')" id="cincoEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seisEspadas', 'url(../img/6S.png)','seisEspadas')" id="seisEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seteEspadas', 'url(../img/7S.png)','seteEspadas')" id="seteEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('oitoEspadas', 'url(../img/8S.png)','oitoEspadas')" id="oitoEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('noveEspadas', 'url(../img/9S.png)','noveEspadas')" id="noveEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('dezEspadas', 'url(../img/10S.png)','dezEspadas')" id="dezEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('valetesEspadas', 'url(../img/JS.png)','valetesEspadas')" id="valetesEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('damaEspadas', 'url(../img/QS.png)','damaEspadas')" id="damaEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('reiEspadas', 'url(../img/KS.png)','reiEspadas')" id="reiEspadas"></section>
+                <section class="cartasClass" onclick="posicionarCarta('asEspadas', 'url(../img/AS.png)','asEspadas')" id="asEspadas"></section>
+            </section>
+            <section class="boxCartasClass" id="ouros">
+                <section class="cartasClass" id='naipeOuros'></section>
+                <section class="cartasClass" onclick="posicionarCarta('doisOuros', 'url(../img/2D.png)','doisOuros')" id="doisOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('tresOuros', 'url(../img/3D.png)','tresOuros')" id="tresOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('quatroOuros', 'url(../img/4D.png)','quatroOuros')" id="quatroOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('cincoOuros', 'url(../img/5D.png)','cincoOuros')" id="cincoOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seisOuros', 'url(../img/6D.png)','seisOuros')" id="seisOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seteOuros', 'url(../img/7D.png)','seteOuros')" id="seteOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('oitoOuros', 'url(../img/8D.png)','oitoOuros')" id="oitoOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('noveOuros', 'url(../img/9D.png)','noveOuros')" id="noveOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('dezOuros', 'url(../img/10D.png)','dezOuros')" id="dezOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('valetesOuros', 'url(../img/JD.png)','valetesOuros')" id="valetesOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('damaOuros', 'url(../img/QD.png)','damaOuros')" id="damaOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('reiOuros', 'url(../img/KD.png)','reiOuros')" id="reiOuros"></section>
+                <section class="cartasClass" onclick="posicionarCarta('asOuros', 'url(../img/AD.png)','asOuros')" id="asOuros"></section>
+            </section>
+            <section class="boxCartasClass" id="paus">
+                <section class="cartasClass" id='naipePaus'></section>
+                <section class="cartasClass" onclick="posicionarCarta('doisPaus', 'url(../img/2C.png)','doisPaus')" id="doisPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('tresPaus', 'url(../img/3C.png)','tresPaus')" id="tresPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('quatroPaus', 'url(../img/4C.png)','quatroPaus')" id="quatroPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('cincoPaus', 'url(../img/5C.png)','cincoPaus')" id="cincoPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('seisPaus', 'url(../img/6C.png)','seisPaus')" id="seisPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('setePaus', 'url(../img/7C.png)','setePaus')" id="setePaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('oitoPaus', 'url(../img/8C.png)','oitoPaus')" id="oitoPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('novePaus', 'url(../img/9C.png)','novePaus')" id="novePaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('dezPaus', 'url(../img/10C.png)','dezPaus')" id="dezPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('valetesPaus', 'url(../img/JC.png)','valetesPaus')" id="valetesPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('damaPaus', 'url(../img/QC.png)','damaPaus')" id="damaPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('reiPaus', 'url(../img/KC.png)','reiPaus')" id="reiPaus"></section>
+                <section class="cartasClass" onclick="posicionarCarta('asPaus', 'url(../img/AC.png)','asPaus')" id="asPaus"></section>
+            </section>
+        </article>
+    </main>
+
+</body>
+
+</html>

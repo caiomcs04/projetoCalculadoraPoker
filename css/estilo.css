@@ -1,0 +1,623 @@
+html,
+body {
+    background-image: url(../img/fundoPoker.jpeg);
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#botaoRecolher {
+    background-image: url(../img/fundoBotao.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    border-radius: 100%;
+    margin-left: 80%;
+    margin-top: 2%;
+    display: none;
+}
+
+#setaBaixo {
+    margin-top: 22%;
+    margin-left: 15%;
+    width: 70%;
+    height: 50%;
+}
+
+#botaoRecomecar {
+    background-image: url(../img/aces.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    margin-left: 10%;
+    margin-top: 35%;
+    transition: 1s;
+}
+
+#botaoRecomecar:hover {
+    opacity: 80%;
+}
+
+#letraRecomecar {
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    margin-left: 14.3%;
+    margin-top: 41.5%;
+    transition: 1s;
+}
+
+#mesaPoker {
+    background-image: url(../img/mesaPoker.png);
+    background-size: 100% 100%;
+    width: 45%;
+    height: 45%;
+    margin-left: 28%;
+    margin-top: 9%;
+    position: absolute;
+    transition: 1s;
+}
+
+#cartaMesa1 {
+    float: left;
+    background-image: url(../img/red_back.png);
+    background-size: 100% 100%;
+    box-shadow: none;
+    width: 14%;
+    height: 50%;
+    margin-left: 12%;
+    margin-top: 12%;
+    transition: 0.5s;
+}
+
+#cartaMesa1:hover {
+    width: 18%;
+    height: 54%;
+    margin-top: 11%;
+    border: solid 2px blue;
+    box-shadow: 0px 0px 15px blue;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#cartaMesa2 {
+    float: left;
+    box-shadow: none;
+    background-image: url(../img/red_back.png);
+    background-size: 100% 100%;
+    width: 14%;
+    height: 50%;
+    margin-left: 1%;
+    margin-top: 12%;
+    transition: 0.5s;
+}
+
+#cartaMesa2:hover {
+    width: 18%;
+    height: 54%;
+    margin-top: 11%;
+    border: solid 2px blue;
+    box-shadow: 0px 0px 15px blue;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#cartaMesa3 {
+    float: left;
+    background-image: url(../img/red_back.png);
+    background-size: 100% 100%;
+    width: 14%;
+    box-shadow: none;
+    height: 50%;
+    margin-left: 1%;
+    margin-top: 12%;
+    transition: 0.5s;
+}
+
+#cartaMesa3:hover {
+    width: 18%;
+    height: 54%;
+    margin-top: 11%;
+    border: solid 2px blue;
+    box-shadow: 0px 0px 15px blue;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#cartaMesa4 {
+    float: left;
+    box-shadow: none;
+    background-image: url(../img/red_back.png);
+    background-size: 100% 100%;
+    width: 14%;
+    height: 50%;
+    margin-left: 1%;
+    margin-top: 12%;
+    transition: 0.5s;
+}
+
+#cartaMesa4:hover {
+    width: 18%;
+    height: 54%;
+    margin-top: 11%;
+    border: solid 2px blue;
+    box-shadow: 0px 0px 15px blue;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#cartaMesa5 {
+    float: left;
+    box-shadow: none;
+    background-image: url(../img/red_back.png);
+    background-size: 100% 100%;
+    width: 14%;
+    height: 50%;
+    margin-left: 1%;
+    margin-top: 12%;
+    transition: 0.5s;
+}
+
+#cartaMesa5:hover {
+    width: 18%;
+    height: 54%;
+    margin-top: 11%;
+    border: solid 2px blue;
+    box-shadow: 0px 0px 15px blue;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#cartaMao {
+    width: 15%;
+    height: 30%;
+    margin-left: 43.5%;
+    margin-top: 32%;
+    position: absolute;
+    transition: 1s;
+}
+
+#cartaMao1 {
+    float: left;
+    box-shadow: none;
+    background-image: url(../img/blue_back.png);
+    background-size: 100% 100%;
+    width: 40%;
+    height: 70%;
+    margin-left: 7.5%;
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+#cartaMao1:hover {
+    width: 45%;
+    height: 75%;
+    margin-top: 0%;
+    border: solid 2px yellow;
+    box-shadow: 0px 0px 15px yellow;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#cartaMao2 {
+    float: left;
+    box-shadow: none;
+    background-image: url(../img/blue_back.png);
+    background-size: 100% 100%;
+    border-radius: 7px;
+    width: 40%;
+    height: 70%;
+    margin-left: 4%;
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+#cartaMao2:hover {
+    width: 45%;
+    height: 75%;
+    margin-top: 0%;
+    border: solid 2px yellow;
+    box-shadow: 0px 0px 15px yellow;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+#chanceVitoria {
+    float: left;
+    background-color: palevioletred;
+    width: 90%;
+    height: 20%;
+    margin-left: 4.5%;
+    margin-top: 2%;
+    margin-bottom: -5%;
+}
+
+#todasCartas {
+    background-image: url(../img/fundoCartas.jpeg);
+    background-size: 100% 100%;
+    border-radius: 8% 8% 0% 0%;
+    bottom: -100%;
+    height: 0%;
+    width: 90%;
+    margin-left: 5%;
+    transition: 1s;
+    position: absolute;
+}
+
+.boxCartasClass {
+    margin-top: 1%;
+    float: right;
+    width: 100%;
+    height: 22%;
+}
+
+.cartasClass {
+    float: left;
+    width: 5.3%;
+    margin-left: 1.2%;
+    margin-top: 0.5%;
+    height: 90%;
+}
+
+
+/*Cartas Copas */
+
+#naipeCopas {
+    width: 10%;
+    background-image: url(../img/naipeCopas.png);
+    background-size: 100% 100%;
+}
+
+#doisCopas {
+    background-image: url(../img/2H.png);
+    background-size: 100% 100%;
+    margin-left: 2%;
+}
+
+#doisCopas:hover,
+#tresCopas:hover,
+#quatroCopas:hover,
+#cincoCopas:hover,
+#seisCopas:hover,
+#seteCopas:hover,
+#oitoCopas:hover,
+#noveCopas:hover,
+#dezCopas:hover,
+#valetesCopas:hover,
+#damaCopas:hover,
+#reiCopas:hover,
+#asCopas:hover,
+#doisPaus:hover,
+#tresPaus:hover,
+#quatroPaus:hover,
+#cincoPaus:hover,
+#seisPaus:hover,
+#setePaus:hover,
+#oitoPaus:hover,
+#novePaus:hover,
+#dezPaus:hover,
+#valetesPaus:hover,
+#damaPaus:hover,
+#reiPaus:hover,
+#asPaus:hover,
+#doisOuros:hover,
+#tresOuros:hover,
+#quatroOuros:hover,
+#cincoOuros:hover,
+#seisOuros:hover,
+#seteOuros:hover,
+#oitoOuros:hover,
+#noveOuros:hover,
+#dezOuros:hover,
+#valetesOuros:hover,
+#damaOuros:hover,
+#reiOuros:hover,
+#asOuros:hover,
+#doisEspadas:hover,
+#tresEspadas:hover,
+#quatroEspadas:hover,
+#cincoEspadas:hover,
+#seisEspadas:hover,
+#seteEspadas:hover,
+#oitoEspadas:hover,
+#noveEspadas:hover,
+#dezEspadas:hover,
+#valetesEspadas:hover,
+#damaEspadas:hover,
+#reiEspadas:hover,
+#asEspadas:hover {
+    border-radius: 7px;
+    border: solid 2px yellow;
+    box-shadow: 0px 0px 15px yellow;
+}
+
+#tresCopas {
+    background-image: url(../img/3H.png);
+    background-size: 100% 100%;
+}
+
+#quatroCopas {
+    background-image: url(../img/4H.png);
+    background-size: 100% 100%;
+}
+
+#cincoCopas {
+    background-image: url(../img/5H.png);
+    background-size: 100% 100%;
+}
+
+#seisCopas {
+    background-image: url(../img/6H.png);
+    background-size: 100% 100%;
+}
+
+#seteCopas {
+    background-image: url(../img/7H.png);
+    background-size: 100% 100%;
+}
+
+#oitoCopas {
+    background-image: url(../img/8H.png);
+    background-size: 100% 100%;
+}
+
+#noveCopas {
+    background-image: url(../img/9H.png);
+    background-size: 100% 100%;
+}
+
+#dezCopas {
+    background-image: url(../img/10H.png);
+    background-size: 100% 100%;
+}
+
+#valetesCopas {
+    background-image: url(../img/JH.png);
+    background-size: 100% 100%;
+}
+
+#damaCopas {
+    background-image: url(../img/QH.png);
+    background-size: 100% 100%;
+}
+
+#reiCopas {
+    background-image: url(../img/KH.png);
+    background-size: 100% 100%;
+}
+
+#asCopas {
+    background-image: url(../img/AH.png);
+    background-size: 100% 100%;
+}
+
+
+/*Cartas Paus*/
+
+#naipePaus {
+    width: 10%;
+    background-image: url(../img/naipePaus.png);
+    background-size: 100% 100%;
+}
+
+#doisPaus {
+    background-image: url(../img/2C.png);
+    background-size: 100% 100%;
+    margin-left: 2%;
+}
+
+#tresPaus {
+    background-image: url(../img/3C.png);
+    background-size: 100% 100%;
+}
+
+#quatroPaus {
+    background-image: url(../img/4C.png);
+    background-size: 100% 100%;
+}
+
+#cincoPaus {
+    background-image: url(../img/5C.png);
+    background-size: 100% 100%;
+}
+
+#seisPaus {
+    background-image: url(../img/6C.png);
+    background-size: 100% 100%;
+}
+
+#setePaus {
+    background-image: url(../img/7C.png);
+    background-size: 100% 100%;
+}
+
+#oitoPaus {
+    background-image: url(../img/8C.png);
+    background-size: 100% 100%;
+}
+
+#novePaus {
+    background-image: url(../img/9C.png);
+    background-size: 100% 100%;
+}
+
+#dezPaus {
+    background-image: url(../img/10C.png);
+    background-size: 100% 100%;
+}
+
+#valetesPaus {
+    background-image: url(../img/JC.png);
+    background-size: 100% 100%;
+}
+
+#damaPaus {
+    background-image: url(../img/QC.png);
+    background-size: 100% 100%;
+}
+
+#reiPaus {
+    background-image: url(../img/KC.png);
+    background-size: 100% 100%;
+}
+
+#asPaus {
+    background-image: url(../img/AC.png);
+    background-size: 100% 100%;
+}
+
+
+/*Cartas Espadas */
+
+#naipeEspadas {
+    width: 10%;
+    background-image: url(../img/naipeEspadas.png);
+    background-size: 100% 100%;
+}
+
+#doisEspadas {
+    background-image: url(../img/2S.png);
+    background-size: 100% 100%;
+    margin-left: 2%;
+}
+
+#tresEspadas {
+    background-image: url(../img/3S.png);
+    background-size: 100% 100%;
+}
+
+#quatroEspadas {
+    background-image: url(../img/4S.png);
+    background-size: 100% 100%;
+}
+
+#cincoEspadas {
+    background-image: url(../img/5S.png);
+    background-size: 100% 100%;
+}
+
+#seisEspadas {
+    background-image: url(../img/6S.png);
+    background-size: 100% 100%;
+}
+
+#seteEspadas {
+    background-image: url(../img/7S.png);
+    background-size: 100% 100%;
+}
+
+#oitoEspadas {
+    background-image: url(../img/8S.png);
+    background-size: 100% 100%;
+}
+
+#noveEspadas {
+    background-image: url(../img/9S.png);
+    background-size: 100% 100%;
+}
+
+#dezEspadas {
+    background-image: url(../img/10S.png);
+    background-size: 100% 100%;
+}
+
+#valetesEspadas {
+    background-image: url(../img/JS.png);
+    background-size: 100% 100%;
+}
+
+#damaEspadas {
+    background-image: url(../img/QS.png);
+    background-size: 100% 100%;
+}
+
+#reiEspadas {
+    background-image: url(../img/KS.png);
+    background-size: 100% 100%;
+}
+
+#asEspadas {
+    background-image: url(../img/AS.png);
+    background-size: 100% 100%;
+}
+
+
+/*Cartas Ouros*/
+
+#naipeOuros {
+    width: 10%;
+    background-image: url(../img/naipeOuros.png);
+    background-size: 100% 100%;
+}
+
+#doisOuros {
+    background-image: url(../img/2D.png);
+    background-size: 100% 100%;
+    margin-left: 2%;
+}
+
+#tresOuros {
+    background-image: url(../img/3D.png);
+    background-size: 100% 100%;
+}
+
+#quatroOuros {
+    background-image: url(../img/4D.png);
+    background-size: 100% 100%;
+}
+
+#cincoOuros {
+    background-image: url(../img/5D.png);
+    background-size: 100% 100%;
+}
+
+#seisOuros {
+    background-image: url(../img/6D.png);
+    background-size: 100% 100%;
+}
+
+#seteOuros {
+    background-image: url(../img/7D.png);
+    background-size: 100% 100%;
+}
+
+#oitoOuros {
+    background-image: url(../img/8D.png);
+    background-size: 100% 100%;
+}
+
+#noveOuros {
+    background-image: url(../img/9D.png);
+    background-size: 100% 100%;
+}
+
+#dezOuros {
+    background-image: url(../img/10D.png);
+    background-size: 100% 100%;
+}
+
+#valetesOuros {
+    background-image: url(../img/JD.png);
+    background-size: 100% 100%;
+}
+
+#damaOuros {
+    background-image: url(../img/QD.png);
+    background-size: 100% 100%;
+}
+
+#reiOuros {
+    background-image: url(../img/KD.png);
+    background-size: 100% 100%;
+}
+
+#asOuros {
+    background-image: url(../AD.png);
+    background-size: 100% 100%;
+}
